@@ -1,0 +1,7 @@
+## YAML Template.
+listen_address: 127.0.0.1
+listen_port: 5001
+output_path: "logs"
+output_typ: CBORHex
+selected_hashs: [TPM2_ALG_SHA1, TPM2_ALG_SHA256]
+

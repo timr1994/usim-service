@@ -1,0 +1,13 @@
+hash-message = [
+    pcr: (0..23) .default 16 ,
+    interpreter: tstr,
+    script-id: tstr,
+    hashes: [+ hashalgs]
+]
+hashalgs = &(
+    SHA1: [0, bstr .size 20],
+    SHA256: [1, bstr .size 32],
+    SHA384: [2, bstr .size 48],
+    SHA512: [3, bstr .size 64],
+    SM3_256: [4, bstr .size 32]
+)

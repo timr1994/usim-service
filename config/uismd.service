@@ -1,0 +1,11 @@
+[Unit]
+Description=Userspace Software Integrity Measurement Dameon
+#Requires=tpm2-abrmd.service
+#After=tpm2-abrmd.service
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+ExecStart=/usr/local/bin/uiimd /usr/local/etc/uismd/conf.yml
+[Install]
+WantedBy=multi-user.target

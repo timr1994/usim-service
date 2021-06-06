@@ -1,0 +1,23 @@
+app-event-log-record = [
+    event-id: tstr,
+    event: bstr,
+    event-digests: [ + digest ]
+]
+
+digest = [
+    hash_alg_id: tcg_hash_alg_id,
+    digest-blob: bstr
+]
+
+; (TPM2_ALG_ID) tcg_hash_alg_id: // see hash-algos.h
+tcg_hash_alg_id = &(
+     TPM2_ALG_SHA1 :  0x0004,
+     TPM2_ALG_SHA256 : 0x000B,
+     TPM2_ALG_SHA384 : 0x000C,
+     TPM2_ALG_SHA512 : 0x000D,
+     TPM2_ALG_SM3_256 : 0x0012,
+     TPM2_ALG_SHA3_256 : 0x0027,
+     TPM2_ALG_SHA3_384 : 0x0028,
+     TPM2_ALG_SHA3_512 : 0x0029
+)
+
