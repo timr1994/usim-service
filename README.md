@@ -7,3 +7,7 @@ The code in this repository accompanies our publication on "Userspace Software I
 - Michael Eckel <michael.eckel@sit.fraunhofer.de> (@eckelmeckel)
 - Tim Riemann <tim.riemann@sit.fraunhofer.de> (@timr1994)
 
+This repository is part of the following code repositories:
+- <https://github.com/timr1994/libusim>
+- <https://github.com/timr1994/usim-service>
+- <https://github.com/timr1994/usim-jvm>
